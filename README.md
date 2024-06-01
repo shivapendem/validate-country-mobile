@@ -1,16 +1,16 @@
 # Description
-    npm package for validate mobile number.
+    npm package for validate country mobile.
 # Installation
-    `npm i validate-mobile-number --save`
+    `npm i validate-country-mobile --save`
         
-    let vmn = require('validate-mobile-number');
+    let vcm = require('validate-country-mobile');
 
 # How to use
 Let's see about js code:
 ```js
-    let vmn = require('validate-mobile-number');
+    let vcm = require('validate-country-mobile');
     
-    let _numberinfo=vmn.validatenumber("1","9876543210");
+    let _numberinfo=vcm.validatenumber("1","9876543210");
 
     console.log(_numberinfo); // returns as follows
     {

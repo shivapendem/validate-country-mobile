@@ -1,5 +1,5 @@
 {
-  "name": "validate-mobile-number",
+  "name": "validate-country-mobile",
   "version": "0.1.0",
   "description": "Nodejs plugin to validate mobilenumber",
   "main": "index.js",
@@ -8,18 +8,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shivapendem/validate-mobile-number.git"
+    "url": "git+https://github.com/shivapendem/validate-country-mobile.git"
   },
   "keywords": [
     "validate-mobile-number",
     "validate mobile number",
     "validate number",
+    "validate-country-mobile",
+    "validate country mobile",
     "shivapendem"
   ],
   "author": "shivapendem",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/shivapendem/validate-mobile-number/issues"
+    "url": "https://github.com/shivapendem/validate-country-mobile/issues"
   },
-  "homepage": "https://github.com/shivapendem/validate-mobile-number#readme"
+  "homepage": "https://github.com/shivapendem/validate-country-mobile#readme"
 }
