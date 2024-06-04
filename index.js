@@ -259,27 +259,54 @@ function clearalphasymbols (teststring) {
 		return teststring.replace(/[^0-9]/g, '').replace(/^0+/, '');
 	};
 
-function validatenumber(countrycode,mobilenumber) {
+function validatenumber(_countrycode,_mobilenumber) {
+	
+	let countrycode=clearalphasymbols(_countrycode);
+	let mobilenumber=clearalphasymbols(_mobilenumber);
+	let data={};
+	data.status=false;
+  if (isNull(mobilenumber) || isNull(countrycode) )
+  {
+    return data;
+  }
+  else
+  {
+  	let _index=CountryInfo.findIndex((e) =>{return (clearalphasymbols(e?.phone) == clearalphasymbols(countrycode))});
+    if(_index != -1)
+  	{
+  		data.info=CountryInfo[_index];
+  		if( !Array.isArray(data.info.phoneLength) )
+  			data.info.accepetedLength=[CountryInfo[_index].phoneLength];
+  		else
+  			data.info.accepetedLength=CountryInfo[_index].phoneLength;
+  		data.status=data.info.accepetedLength.findIndex((e) =>{ return e== clearalphasymbols(mobilenumber).length ; })>=0?true:false;
+  		data.info.countrycode= data.info.phone;
+  		delete data.info.phoneLength;
+  		delete data.info.phone;
+  	}
+  	return data;
+  }
+};
+
+function validatesinglenumber(_mobilenumber) {
+	let mobilenumber=clearalphasymbols(_mobilenumber);
 	let data={};
 	data.status=false;
 
-	let _index=CountryInfo.findIndex((e) =>{return (e?.phone == clearalphasymbols(countrycode))});
-	if(_index != -1)
+	if(mobilenumber.length <=6)
+		return data;
+  else if (isNull(_mobilenumber))
+  {
+    return data;
+  }
+	else
 	{
-		data.info=CountryInfo[_index];
-		if( !Array.isArray(data.info.phoneLength) )
-			data.info.accepetedLength=[CountryInfo[_index].phoneLength];
-		else
-			data.info.accepetedLength=CountryInfo[_index].phoneLength;
-		data.status=data.info.accepetedLength.findIndex((e) =>{ return e== clearalphasymbols(mobilenumber).length ; })>=0?true:false;
-		delete data.info.phoneLength;
-
+		for(loopvar=4;(loopvar>0) && (data.status ==false);loopvar--)
+		{
+			data=validatenumber(mobilenumber.substring(0,loopvar),mobilenumber.substring(loopvar));
+		}
+		return data;
 	}
-	return data;
 };
 
-module.exports = {
-	validatenumber
-}
-
-console.log(validatenumber("1","9876543210"));
+module.exports = {validatenumber,validatesinglenumber}

@@ -24,6 +24,20 @@ Let's see about js code:
       }
     }
 
+    let _numberinfo=vcm.validatesinglenumber("+0019876543210");
+
+    console.log(_numberinfo); // returns as follows
+    {
+      status: true,
+      info: {
+        code: 'CA',
+        label: 'Canada',
+        phone: '1',
+        suggested: true,
+        accepetedLength: [ 10 ]
+      }
+    }
+
 ```
 
 # Support
