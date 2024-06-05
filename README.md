@@ -48,6 +48,17 @@ Let's see about js code:
       countrycode: '1'
     }
 
+    let _countryinfo=vcm.getCountryInfoISO("US");
+
+    console.log(_countryinfo); // returns as follows
+    {
+      code: 'US',
+      label: 'United States',
+      suggested: true,
+      maxlength: 10,
+      countrycode: '1'
+    }
+
 ```
 
 # Support

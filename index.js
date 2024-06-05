@@ -332,4 +332,28 @@ function getCountryInfo(_countrycode) {
   }
 }
 
-module.exports = { validatenumber, validatesinglenumber, getCountryInfo }
+function getCountryInfoISO(countrycode) {
+  let data = {};
+  if (isNull(countrycode)) {
+    return null;
+  }
+  else {
+    let _index = CountryInfo.findIndex((e) => { return (e.code.toUpperCase() == (countrycode+"").toUpperCase())});
+    if (_index != -1) {
+      data = { ...CountryInfo[_index] };
+      if (!Array.isArray(data.phoneLength))
+        data.maxlength = CountryInfo[_index].phoneLength;
+      else
+        data.maxlength = Math.max(...CountryInfo[_index].phoneLength);
+      data.countrycode = data.phone;
+      delete data.phoneLength;
+      delete data.phone;
+      return data;
+    }
+    else {
+      return null;
+    }
+  }
+}
+
+module.exports = { validatenumber, validatesinglenumber, getCountryInfo,getCountryInfoISO }
