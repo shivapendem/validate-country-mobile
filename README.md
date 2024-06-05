@@ -37,6 +37,16 @@ Let's see about js code:
         accepetedLength: [ 10 ]
       }
     }
+    let _countryinfo=vcm.getCountryInfo("1");
+
+    console.log(_countryinfo); // returns as follows
+    {
+      code: 'CA',
+      label: 'Canada',
+      suggested: true,
+      maxlength: 10,
+      countrycode: '1'
+    }
 
 ```
 
