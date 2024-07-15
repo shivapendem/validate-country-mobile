@@ -278,6 +278,7 @@ function validatenumber(_countrycode, _mobilenumber) {
       data.status = data.info.accepetedLength.findIndex((e) => { return e == clearalphasymbols(mobilenumber).length; }) >= 0 ? true : false;
       if (data.status) {
         data.info.countrycode = data.info.phone;
+        data.info.nationalnumber = mobilenumber;
         delete data.info.phoneLength;
         delete data.info.phone;
       }
