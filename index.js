@@ -155,7 +155,7 @@ const CountryInfo = [
 	{ code: 'MV', label: 'Maldives', phone: '960', phoneLength: 7 },
 	{ code: 'MW', label: 'Malawi', phone: '265', phoneLength: [7, 8, 9] },
 	{ code: 'MX', label: 'Mexico', phone: '52', phoneLength: 10 },
-	{ code: 'MY', label: 'Malaysia', phone: '60', phoneLength: 7 },
+	{ code: 'MY', label: 'Malaysia', phone: '60', phoneLength: [7,8,9,10] },
 	{ code: 'MZ', label: 'Mozambique', phone: '258', phoneLength: 12 },
 	{ code: 'NA', label: 'Namibia', phone: '264', phoneLength: 7 },
 	{ code: 'NC', label: 'New Caledonia', phone: '687', phoneLength: 6 },
