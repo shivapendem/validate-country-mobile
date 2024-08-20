@@ -8,7 +8,7 @@ const CountryInfo = [
 	{ code: 'AM', label: 'Armenia', phone: '374', phoneLength: 6 },
 	{ code: 'AO', label: 'Angola', phone: '244', phoneLength: 9 },
 	{ code: 'AQ', label: 'Antarctica', phone: '672', phoneLength: 6 },
-	{ code: 'AR', label: 'Argentina', phone: '54', phoneLength: [6, 7, 8] },
+	{ code: 'AR', label: 'Argentina', phone: '54', phoneLength: [6, 7, 8,10] },
 	{ code: 'AS', label: 'American Samoa', phone: '1-684', phoneLength: 10 },
 	{ code: 'AT', label: 'Austria', phone: '43', phoneLength: [10, 11] },
 	{ code: 'AU', label: 'Australia', phone: '61', phoneLength: 9 },
@@ -27,7 +27,7 @@ const CountryInfo = [
 	{ code: 'BL', label: 'Saint Barthelemy', phone: '590', phoneLength: 9 },
 	{ code: 'BM', label: 'Bermuda', phone: '1-441', phoneLength: 10 },
 	{ code: 'BN', label: 'Brunei Darussalam', phone: '673', phoneLength: 7 },
-	{ code: 'BO', label: 'Bolivia', phone: '591', phoneLength: 9 },
+	{ code: 'BO', label: 'Bolivia', phone: '591', phoneLength: [8,9] },
 	{ code: 'BR', label: 'Brazil', phone: '55', phoneLength: 11 },
 	{ code: 'BS', label: 'Bahamas', phone: '1-242', phoneLength: 10 },
 	{ code: 'BT', label: 'Bhutan', phone: '975', phoneLength: 7 },
@@ -41,7 +41,7 @@ const CountryInfo = [
 	{ code: 'CF', label: 'Central African Republic', phone: '236', phoneLength: 8 },
 	{ code: 'CG', label: 'Congo, Republic of the', phone: '242', phoneLength: 9 },
 	{ code: 'CH', label: 'Switzerland', phone: '41', phoneLength: 9 },
-	{ code: 'CI', label: "Cote d'Ivoire", phone: '225', phoneLength: 8 },
+	{ code: 'CI', label: "Cote d'Ivoire", phone: '225', phoneLength: [8,10] },
 	{ code: 'CK', label: 'Cook Islands', phone: '682', phoneLength: 5 },
 	{ code: 'CL', label: 'Chile', phone: '56', phoneLength: 9 },
 	{ code: 'CM', label: 'Cameroon', phone: '237', phoneLength: 9 },
@@ -54,7 +54,7 @@ const CountryInfo = [
 	{ code: 'CX', label: 'Christmas Island', phone: '61', phoneLength: 9 },
 	{ code: 'CY', label: 'Cyprus', phone: '357', phoneLength: 8 },
 	{ code: 'CZ', label: 'Czech Republic', phone: '420', phoneLength: 9 },
-	{ code: 'DE', label: 'Germany', phone: '49', phoneLength: 10 },
+	{ code: 'DE', label: 'Germany', phone: '49', phoneLength: [10,11] },
 	{ code: 'DJ', label: 'Djibouti', phone: '253', phoneLength: 10 },
 	{ code: 'DK', label: 'Denmark', phone: '45', phoneLength: 8 },
 	{ code: 'DM', label: 'Dominica', phone: '1-767', phoneLength: 10 },
@@ -98,36 +98,36 @@ const CountryInfo = [
 	{ code: 'HR', label: 'Croatia', phone: '385', phoneLength: 9 },
 	{ code: 'HT', label: 'Haiti', phone: '509', phoneLength: 8 },
 	{ code: 'HU', label: 'Hungary', phone: '36', phoneLength: 9 },
-	{ code: 'ID', label: 'Indonesia', phone: '62', phoneLength: [11, 12] },
+	{ code: 'ID', label: 'Indonesia', phone: '62', phoneLength: [10,11, 12] },
 	{ code: 'IE', label: 'Ireland', phone: '353', phoneLength: 9 },
 	{ code: 'IL', label: 'Israel', phone: '972', phoneLength: 9 },
 	{ code: 'IM', label: 'Isle of Man', phone: '44', phoneLength: 10 },
 	{ code: 'IN', label: 'India', phone: '91', phoneLength: 10 },
 	{ code: 'IO', label: 'British Indian Ocean Territory', phone: '246', phoneLength: 7 },
 	{ code: 'IQ', label: 'Iraq', phone: '964', phoneLength: 10 },
-	{ code: 'IR', label: 'Iran, Islamic Republic of', phone: '98', phoneLength: 11 },
+	{ code: 'IR', label: 'Iran, Islamic Republic of', phone: '98', phoneLength: [10,11] },
 	{ code: 'IS', label: 'Iceland', phone: '354', phoneLength: 7 },
 	{ code: 'IT', label: 'Italy', phone: '39', phoneLength: 10 },
 	{ code: 'JE', label: 'Jersey', phone: '44', phoneLength: 10 },
 	{ code: 'JM', label: 'Jamaica', phone: '1-876', phoneLength: 10 },
 	{ code: 'JO', label: 'Jordan', phone: '962', phoneLength: [8, 9] },
 	{ code: 'JP', label: 'Japan', phone: '81', phoneLength: 10 },
-	{ code: 'KE', label: 'Kenya', phone: '254', phoneLength: 10 },
+	{ code: 'KE', label: 'Kenya', phone: '254', phoneLength: [9,10] },
 	{ code: 'KG', label: 'Kyrgyzstan', phone: '996', phoneLength: 9 },
 	{ code: 'KH', label: 'Cambodia', phone: '855', phoneLength: 9 },
 	{ code: 'KI', label: 'Kiribati', phone: '686', phoneLength: 8 },
 	{ code: 'KM', label: 'Comoros', phone: '269', phoneLength: 7 },
 	{ code: 'KN', label: 'Saint Kitts and Nevis', phone: '1-869', phoneLength: 10 },
 	{ code: 'KP', label: "Korea, Democratic People's Republic of", phone: '850', phoneLength: [4, 6, 7, 13] },
-	{ code: 'KR', label: 'Korea, Republic of', phone: '82', phoneLength: [7, 8] },
+	{ code: 'KR', label: 'Korea, Republic of', phone: '82', phoneLength: [7, 8,10] },
 	{ code: 'KW', label: 'Kuwait', phone: '965', phoneLength: 8 },
 	{ code: 'KY', label: 'Cayman Islands', phone: '1-345', phoneLength: 7 },
 	{ code: 'KZ', label: 'Kazakhstan', phone: '7', phoneLength: 10 },
-	{ code: 'LA', label: "Lao People's Democratic Republic", phone: '856', phoneLength: [8, 9] },
+	{ code: 'LA', label: "Lao People's Democratic Republic", phone: '856', phoneLength: [8, 9,10] },
 	{ code: 'LB', label: 'Lebanon', phone: '961', phoneLength: [7, 8] },
 	{ code: 'LC', label: 'Saint Lucia', phone: '1-758', phoneLength: 7 },
 	{ code: 'LI', label: 'Liechtenstein', phone: '423', phoneLength: 7 },
-	{ code: 'LK', label: 'Sri Lanka', phone: '94', phoneLength: 7 },
+	{ code: 'LK', label: 'Sri Lanka', phone: '94', phoneLength: [7,9] },
 	{ code: 'LR', label: 'Liberia', phone: '231', phoneLength: [8, 9] },
 	{ code: 'LS', label: 'Lesotho', phone: '266', phoneLength: 8 },
 	{ code: 'LT', label: 'Lithuania', phone: '370', phoneLength: 8 },
@@ -161,7 +161,7 @@ const CountryInfo = [
 	{ code: 'NC', label: 'New Caledonia', phone: '687', phoneLength: 6 },
 	{ code: 'NE', label: 'Niger', phone: '227', phoneLength: 8 },
 	{ code: 'NF', label: 'Norfolk Island', phone: '672', phoneLength: 6 },
-	{ code: 'NG', label: 'Nigeria', phone: '234', phoneLength: 8 },
+	{ code: 'NG', label: 'Nigeria', phone: '234', phoneLength: [8,10] },
 	{ code: 'NI', label: 'Nicaragua', phone: '505', phoneLength: 8 },
 	{ code: 'NL', label: 'Netherlands', phone: '31', phoneLength: 9 },
 	{ code: 'NO', label: 'Norway', phone: '47', phoneLength: 8 },
@@ -209,7 +209,7 @@ const CountryInfo = [
 	{ code: 'ST', label: 'Sao Tome and Principe', phone: '239', phoneLength: 7 },
 	{ code: 'SV', label: 'El Salvador', phone: '503', phoneLength: 8 },
 	{ code: 'SX', label: 'Sint Maarten (Dutch part)', phone: '1-721', phoneLength: 10 },
-	{ code: 'SY', label: 'Syrian Arab Republic', phone: '963', phoneLength: 7 },
+	{ code: 'SY', label: 'Syrian Arab Republic', phone: '963', phoneLength: [7,9] },
 	{ code: 'SZ', label: 'Swaziland', phone: '268', phoneLength: 8 },
 	{ code: 'TC', label: 'Turks and Caicos Islands', phone: '1-649', phoneLength: 10 },
 	{ code: 'TD', label: 'Chad', phone: '235', phoneLength: 6 },
@@ -222,19 +222,19 @@ const CountryInfo = [
 	{ code: 'TM', label: 'Turkmenistan', phone: '993', phoneLength: 8 },
 	{ code: 'TN', label: 'Tunisia', phone: '216', phoneLength: 8 },
 	{ code: 'TO', label: 'Tonga', phone: '676', phoneLength: 5 },
-	{ code: 'TR', label: 'Turkey', phone: '90', phoneLength: 11 },
+	{ code: 'TR', label: 'Turkey', phone: '90', phoneLength: [10,11] },
 	{ code: 'TT', label: 'Trinidad and Tobago', phone: '1-868', phoneLength: 7 },
 	{ code: 'TV', label: 'Tuvalu', phone: '688', phoneLength: 5 },
 	{ code: 'TW', label: 'Taiwan, Province of China', phone: '886', phoneLength: 9 },
-	{ code: 'TZ', label: 'United Republic of Tanzania', phone: '255', phoneLength: 7 },
+	{ code: 'TZ', label: 'United Republic of Tanzania', phone: '255', phoneLength: [7,9] },
 	{ code: 'UA', label: 'Ukraine', phone: '380', phoneLength: 9 },
-	{ code: 'UG', label: 'Uganda', phone: '256', phoneLength: 7 },
+	{ code: 'UG', label: 'Uganda', phone: '256', phoneLength: [7,9] },
 	{ code: 'US', label: 'United States', phone: '1', phoneLength: 10 },
 	{ code: 'UY', label: 'Uruguay', phone: '598', phoneLength: 8 },
 	{ code: 'UZ', label: 'Uzbekistan', phone: '998', phoneLength: 9 },
 	{ code: 'VA', label: 'Holy See (Vatican City State)', phone: '379', phoneLength: 10 },
 	{ code: 'VC', label: 'Saint Vincent and the Grenadines', phone: '1-784', phoneLength: 7 },
-	{ code: 'VE', label: 'Venezuela', phone: '58', phoneLength: 7 },
+	{ code: 'VE', label: 'Venezuela', phone: '58', phoneLength: [7,10] },
 	{ code: 'VG', label: 'British Virgin Islands', phone: '1-284', phoneLength: 7 },
 	{ code: 'VI', label: 'US Virgin Islands', phone: '1-340', phoneLength: 10 },
 	{ code: 'VN', label: 'Vietnam', phone: '84', phoneLength: 9 },
@@ -254,13 +254,17 @@ function isNull(data) {
 	return false;
 };
 
+function removePrependingZero(teststring) {
+	if (isNull(teststring)) return teststring;
+	return teststring.replace(/^0+/, '');
+};
 function clearalphasymbols(teststring) {
 	if (isNull(teststring)) return teststring;
-	return teststring.replace(/[^0-9]/g, '').replace(/^0+/, '');
+	return teststring.replace(/[^0-9]/g, '');
 };
 
 function validatenumber(_countrycode, _mobilenumber) {
-	let countrycode = clearalphasymbols(_countrycode);
+	let countrycode = removePrependingZero(clearalphasymbols(_countrycode));
 	let mobilenumber = clearalphasymbols(_mobilenumber);
 	let data = {};
 	data.status = false;
@@ -291,7 +295,7 @@ function validatenumber(_countrycode, _mobilenumber) {
 };
 
 function validatesinglenumber(_mobilenumber) {
-	let mobilenumber = clearalphasymbols(_mobilenumber);
+	let mobilenumber = removePrependingZero(clearalphasymbols(_mobilenumber));
 	let data = {};
 	data.status = false;
 
@@ -302,6 +306,7 @@ function validatesinglenumber(_mobilenumber) {
 	}
 	else {
 		for (loopvar = 4; (loopvar > 0) && (data.status == false); loopvar--) {
+
 			data = validatenumber(mobilenumber.substring(0, loopvar), mobilenumber.substring(loopvar));
 		}
 		return data;
@@ -309,7 +314,7 @@ function validatesinglenumber(_mobilenumber) {
 };
 
 function getCountryInfo(_countrycode) {
-	let countrycode = clearalphasymbols(_countrycode);
+	let countrycode = removePrependingZero(clearalphasymbols(_countrycode));
 	let data = {};
 	if (isNull(countrycode)) {
 		return null;

@@ -63,6 +63,11 @@ Let's see about js code:
 
 ```
 
+I am most welcome to have your feedback on the number and updates if i am missing, 
+
+
+feel free to get in touch and update us the number so the respective changes get updated.
+
 # Support
 
 Happy to add more, and need any updates, do get in touch on my telegram over [@chigovera](https://t.me/chigovera)
