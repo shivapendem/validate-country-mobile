@@ -17,7 +17,7 @@ const CountryInfo = [
 	{ code: 'AZ', label: 'Azerbaijan', phone: '994', phoneLength: 9 },
 	{ code: 'BA', label: 'Bosnia and Herzegovina', phone: '387', phoneLength: 8 },
 	{ code: 'BB', label: 'Barbados', phone: '1-246', phoneLength: 10 },
-	{ code: 'BD', label: 'Bangladesh', phone: '880', phoneLength: 10 },
+	{ code: 'BD', label: 'Bangladesh', phone: '880', phoneLength: [10,11] },
 	{ code: 'BE', label: 'Belgium', phone: '32', phoneLength: 9 },
 	{ code: 'BF', label: 'Burkina Faso', phone: '226', phoneLength: 8 },
 	{ code: 'BG', label: 'Bulgaria', phone: '359', phoneLength: 9 },
