@@ -1,6 +1,6 @@
 {
   "name": "validate-country-mobile",
-  "version": "0.9.0",
+  "version": "1.0.0",
   "description": "Nodejs plugin to validate mobilenumber",
   "main": "index.js",
   "scripts": {
