@@ -139,7 +139,7 @@ const CountryInfo = [
 	{ code: 'MD', label: 'Moldova, Republic of', phone: '373', phoneLength: 8 },
 	{ code: 'ME', label: 'Montenegro', phone: '382', phoneLength: 8 },
 	{ code: 'MF', label: 'Saint Martin (French part)', phone: '590', phoneLength: 6 },
-	{ code: 'MG', label: 'Madagascar', phone: '261', phoneLength: 7 },
+	{ code: 'MG', label: 'Madagascar', phone: '261', phoneLength: 9 },
 	{ code: 'MH', label: 'Marshall Islands', phone: '692', phoneLength: 7 },
 	{ code: 'MK', label: 'Macedonia, the Former Yugoslav Republic of', phone: '389', phoneLength: 8 },
 	{ code: 'ML', label: 'Mali', phone: '223', phoneLength: 8 },
