@@ -133,7 +133,7 @@ const CountryInfo = [
 	{ code: 'LT', label: 'Lithuania', phone: '370', phoneLength: 8 },
 	{ code: 'LU', label: 'Luxembourg', phone: '352', phoneLength: 9 },
 	{ code: 'LV', label: 'Latvia', phone: '371', phoneLength: 8 },
-	{ code: 'LY', label: 'Libya', phone: '218', phoneLength: 10 },
+	{ code: 'LY', label: 'Libya', phone: '218', phoneLength: 9 },
 	{ code: 'MA', label: 'Morocco', phone: '212', phoneLength: 9 },
 	{ code: 'MC', label: 'Monaco', phone: '377', phoneLength: 8 },
 	{ code: 'MD', label: 'Moldova, Republic of', phone: '373', phoneLength: 8 },
