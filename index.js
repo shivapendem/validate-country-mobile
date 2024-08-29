@@ -272,7 +272,7 @@ function validatenumber(_countrycode, _mobilenumber) {
 		return data;
 	}
 	else {
-		let _index = CountryInfo.findIndex((e) => { return (clearalphasymbols(e?.phone) == clearalphasymbols(countrycode)) });
+		let _index = CountryInfo.findIndex((e) => { return (clearalphasymbols(e.phone) == clearalphasymbols(countrycode)) });
 		if (_index != -1) {
 			data.info = { ...CountryInfo[_index] };
 			if (!Array.isArray(data.info.phoneLength))
@@ -320,7 +320,7 @@ function getCountryInfo(_countrycode) {
 		return null;
 	}
 	else {
-		let _index = CountryInfo.findIndex((e) => { return (clearalphasymbols(e?.phone) == clearalphasymbols(countrycode)) });
+		let _index = CountryInfo.findIndex((e) => { return (clearalphasymbols(e.phone) == clearalphasymbols(countrycode)) });
 		if (_index != -1) {
 			data = { ...CountryInfo[_index] };
 			if (!Array.isArray(data.phoneLength))

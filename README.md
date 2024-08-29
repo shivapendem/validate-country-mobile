@@ -18,9 +18,8 @@ Let's see about js code:
       info: {
         code: 'CA',
         label: 'Canada',
-        phone: '1',
-        suggested: true,
         accepetedLength: [ 10 ],
+        countrycode: '1',
         nationalnumber: '9876543210'
       }
     }
@@ -33,9 +32,8 @@ Let's see about js code:
       info: {
         code: 'CA',
         label: 'Canada',
-        phone: '1',
-        suggested: true,
         accepetedLength: [ 10 ],
+        countrycode: '1',
         nationalnumber: '9876543210'
       }
     }
@@ -45,7 +43,6 @@ Let's see about js code:
     {
       code: 'CA',
       label: 'Canada',
-      suggested: true,
       maxlength: 10,
       countrycode: '1'
     }
@@ -56,7 +53,6 @@ Let's see about js code:
     {
       code: 'US',
       label: 'United States',
-      suggested: true,
       maxlength: 10,
       countrycode: '1'
     }
