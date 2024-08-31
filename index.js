@@ -186,7 +186,7 @@ const CountryInfo = [
 	{ code: 'PY', label: 'Paraguay', phone: '595', phoneLength: 9 },
 	{ code: 'QA', label: 'Qatar', phone: '974', phoneLength: 8 },
 	{ code: 'RE', label: 'Reunion', phone: '262', phoneLength: 10 },
-	{ code: 'RO', label: 'Romania', phone: '40', phoneLength: 10 },
+	{ code: 'RO', label: 'Romania', phone: '40', phoneLength: 9 },
 	{ code: 'RS', label: 'Serbia', phone: '381', phoneLength: 9 },
 	{ code: 'RU', label: 'Russian Federation', phone: '7', phoneLength: 10 },
 	{ code: 'RW', label: 'Rwanda', phone: '250', phoneLength: 9 },
