@@ -283,6 +283,10 @@ function validatenumber(_countrycode, _mobilenumber) {
 			if (data.status) {
 				data.info.countrycode = data.info.phone;
 				data.info.nationalnumber = mobilenumber;
+				const phoneUtil = require('google-libphonenumber').PhoneNumberUtil.getInstance();
+				const _number = phoneUtil.parseAndKeepRawInput("+"+countrycode+""+mobilenumber);
+				let modes = {'0': 'FIXED_LINE','1': 'MOBILE','2': 'FIXED_LINE_OR_MOBILE','3': 'TOLL_FREE','4': 'PREMIUM_RATE','5': 'SHARED_COST','6': 'VOIP','7': 'PERSONAL_NUMBER','8': 'PAGER','9': 'UAN','10': 'VOICEMAIL','-1': 'UNKNOWN'};
+				data.info.devicetype=modes[phoneUtil.getNumberType(_number)];
 				delete data.info.phoneLength;
 				delete data.info.phone;
 			}

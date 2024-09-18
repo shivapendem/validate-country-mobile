@@ -20,7 +20,8 @@ Let's see about js code:
         label: 'Canada',
         accepetedLength: [ 10 ],
         countrycode: '1',
-        nationalnumber: '9876543210'
+        nationalnumber: '9876543210',
+        devicetype: 'UNKNOWN'
       }
     }
 
@@ -34,7 +35,8 @@ Let's see about js code:
         label: 'Canada',
         accepetedLength: [ 10 ],
         countrycode: '1',
-        nationalnumber: '9876543210'
+        nationalnumber: '9876543210',
+        devicetype: 'UNKNOWN'
       }
     }
     let _countryinfo=vcm.getCountryInfo("1");

@@ -1,6 +1,6 @@
 {
   "name": "validate-country-mobile",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Nodejs plugin to validate mobilenumber",
   "main": "index.js",
   "scripts": {
@@ -28,5 +28,8 @@
   "bugs": {
     "url": "https://github.com/shivapendem/validate-country-mobile/issues"
   },
-  "homepage": "https://github.com/shivapendem/validate-country-mobile#readme"
+  "homepage": "https://github.com/shivapendem/validate-country-mobile#readme",
+  "dependencies": {
+    "google-libphonenumber": "^3.2.38"
+  }
 }
