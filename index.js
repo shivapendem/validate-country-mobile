@@ -193,7 +193,7 @@ const CountryInfo = [
 	{ code: 'SA', label: 'Saudi Arabia', phone: '966', phoneLength: 9 },
 	{ code: 'SB', label: 'Solomon Islands', phone: '677', phoneLength: 7 },
 	{ code: 'SC', label: 'Seychelles', phone: '248', phoneLength: 7 },
-	{ code: 'SD', label: 'Sudan', phone: '249', phoneLength: 7 },
+	{ code: 'SD', label: 'Sudan', phone: '249', phoneLength: 9 },
 	{ code: 'SE', label: 'Sweden', phone: '46', phoneLength: 7 },
 	{ code: 'SG', label: 'Singapore', phone: '65', phoneLength: 8 },
 	{ code: 'SH', label: 'Saint Helena', phone: '290', phoneLength: 4 },
